@@ -16,9 +16,10 @@
 </head>
 
 <body>
-    <section class="sub-header">
-        <nav>
-            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo"></a>
+    <section class="sub-header" >
+    
+        <nav id="navbar">
+            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo" id="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -63,11 +64,13 @@
         <h1>About Us</h1>
         <p>Deogiri College, Aurangabad, is an undergraduate and postgraduate, coeducational college along with Research center in many disciplines,<br> situated in Aurangabad, Maharashtra.</p>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <p>Made With<i class="fa">&#10084; </i>by Shantanu</p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          
         </div>
+        <hr>
+        <p>Copyrigt MSG</p>
     </section>
 
 
@@ -98,6 +101,19 @@
             navLinks.style.right = "-200px";
         }
     </script>
+        <script>
+            window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+        </script>
 </body>
 
 </html>
