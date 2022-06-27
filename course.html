@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <section class="sub-header" id="navbar">
         <nav>
-            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo"></a>
+            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo" class="logo-2"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -34,6 +34,7 @@
         <h1>Our Courses</h1>
     </section>
     <!--------------Courses-------------->
+    <section class="content">
     <section class="course">
         <h1>Courses We Offer</h1>
         <p>This degree course is affiliated to Dr. Babasaheb Ambedkar Marathwada University, Aurangabad. </p>
@@ -79,7 +80,7 @@
         </div>
     </section>
 
-
+</section>
 
     <!-------------Footer--------------->
     <section class="footer">
@@ -124,6 +125,24 @@
             navLinks.style.right = "-200px";
         }
     </script>
+            <script>
+
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    document.getElementById("navbar").style.padding = "30px 10px"
+                  } else {
+                    navbar.classList.remove("sticky")
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                  }
+                }
+                
+                        </script>
 </body>
 
 </html>

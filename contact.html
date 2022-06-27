@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <section class="sub-header" id="navbar">
         <nav>
-            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo"></a>
+            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo" class="logo-2"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -35,6 +35,7 @@
 
     </section>
     <!-------------contact us--------------->
+    <section class="content">
     <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.4141156705323!2d75.31788471431948!3d19.86472813186926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb99c3c92b612d%3A0x4421c855188247fb!2sDeogiri%20Institute%20Of%20Technology%20%26%20Manegement!5e0!3m2!1sen!2sin!4v1644931665825!5m2!1sen!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -81,7 +82,7 @@
         </div>
 
     </section>
-
+</section>
 
     <!-------------Footer--------------->
     <section class="footer">
@@ -125,6 +126,24 @@
             navLinks.style.right = "-200px";
         }
     </script>
+            <script>
+
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    document.getElementById("navbar").style.padding = "30px 10px"
+                  } else {
+                    navbar.classList.remove("sticky")
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                  }
+                }
+                
+                        </script>
 </body>
 
 </html>

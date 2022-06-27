@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <section class="sub-header" id="navbar">
         <nav>
-            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo"></a>
+            <a href="index.html"><img src="./eduford_img/logo-removebg-preview.png" alt="logo" class="logo-2"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -34,6 +34,7 @@
         <h1>Our Certificate & Online Programs For 2022</h1>
     </section>
     <!------------- blog page content --------------->
+    <section class="content">
     <section class="blog-content">
         <div class="row">
             <div class="blog-left">
@@ -98,7 +99,7 @@
         </div>
 
     </section>
-
+</section>
 
 
     <!-------------Footer--------------->
@@ -141,6 +142,24 @@
             navLinks.style.right = "-200px";
         }
     </script>
+            <script>
+
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    document.getElementById("navbar").style.padding = "30px 10px"
+                  } else {
+                    navbar.classList.remove("sticky")
+                    document.getElementById("navbar").style.padding = "80px 10px";
+                  }
+                }
+                
+                        </script>
 </body>
 
 </html>
