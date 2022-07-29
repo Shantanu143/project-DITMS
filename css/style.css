@@ -569,19 +569,41 @@ footer.footer .move-up span:hover{
     padding: 15px 0 25px;
 }
 
-.red-btn {
-    border: 1px solid #f44336;
+.fa {
     background: transparent;
     color: #f44336;
 }
 
-.red-btn:hover {
-    color: #fff;
+.fa:hover {
+    color: rgb(8, 7, 7);
 }
 
-span {
-    color: #222;
+.about-col-2 .msp-mndl{
+background-color: #e6e4e4;
+padding: 5%;
+
 }
+
+.about-col-2 .msp-mndl .msp{
+    background-color: #ffffff;
+    padding: 2%;
+    align-items: center;
+}
+
+
+.about-col-2 .msp-mndl .msp h2 , h1{
+    text-align: center;
+ 
+}
+.about-col-2 .msp-mndl .logo-3{
+    position: relative;
+    margin-right: 40%;
+    margin-left: 40%;
+
+}
+
+
+
 
 
 /*----------------blog-content------------------*/
