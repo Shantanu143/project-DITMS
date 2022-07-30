@@ -206,6 +206,37 @@ nav .fa{
     .nav-links ul {
         padding: 30px;
     }
+    @media(max-width:700px) {
+        s .testimonials-col img {
+            margin-left: 0px;
+            margin-right: 15px;
+        }
+    }
+    @media(max-width:700px) {
+        .cta h1 {
+            font-size: 24px;
+        }
+    }
+    @media(max-width:700px) {
+        .sub-header h1 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+@media(max-width:700px) {
+    .logo-2 {
+      height: 70px;
+      width: 70px;
+    }
+
+}
+
 
 /*------course------*/
 
@@ -828,39 +859,3 @@ padding: 5%;
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
-
-
-/*             Viewport less then or equal to 700px            */
-
-@media(max-width:700px) {
-    s .testimonials-col img {
-        margin-left: 0px;
-        margin-right: 15px;
-    }
-}
-@media(max-width:700px) {
-    .cta h1 {
-        font-size: 24px;
-    }
-}
-@media(max-width:700px) {
-    .sub-header h1 {
-        font-size: 24px;
-    }
-}
-}
-
-@media(max-width:700px) {
-.row {
-    flex-direction: column;
-}
-}
-@media(max-width:700px) {
-.logo-2 {
-  height: 70px;
-  width: 70px;
-}
-
-}
-
-/*        x      Viewport less then or equal to 700px       x     */
